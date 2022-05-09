@@ -10,6 +10,6 @@ RUN pip install Pillow
 COPY score.py .
 COPY ws.py .
 COPY game.py .
-COPY movies.txt .
+COPY scores.txt .
 EXPOSE 8080
 ENTRYPOINT ["python", "ws.py"]
