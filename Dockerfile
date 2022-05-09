@@ -1,7 +1,8 @@
-FROM python:3.6.4-slim-jessie
+FROM python:3.8
+
+RUN pip --disable-pip-version-check
 
 COPY requirements.txt .
-
 RUN pip install -r requirements.txt 
 
 COPY score.py .
